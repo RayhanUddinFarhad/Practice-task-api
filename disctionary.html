@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <header class="flex justify-center pt-6">
+
+
+        <div class="form-control">
+            <div class="input-group">
+              <input id="search" type="text" placeholder="Search…" class="input input-bordered" />
+              <button onclick="resultBySearch()" class="btn btn-square">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              </button>
+            </div>
+          </div>
+    </header>
+
+    <main class="container mx-auto m-36 p-5 border-2 border-purple-500 space-y-9 ">
+
+
+
+       <section class="p-10 space-y-3">
+
+
+
+
+        <section class="lg:flex justify-between">
+
+
+            <div class="space-y-8">
+ 
+             <h1 id="word" class="text-4xl font-bold">Keyboard</h1>
+             <p id="text">/k.board</p>
+ 
+ 
+ 
+            </div>
+ 
+            <div>
+ 
+ 
+             <audio controls id="sound">
+                 <source src="horse.ogg" type="audio/ogg">
+                 <source src="horse.mp3" type="audio/mpeg">
+               </audio>
+            </div>
+ 
+ 
+ 
+ 
+ 
+         </section>
+ 
+ 
+         <section class="space-y-5">
+ 
+ 
+             <p id="part_of_speech" class="font-bold">noun</p>
+ 
+             <p>Meaning</p>
+ 
+            <ul class="space-y-5 list-disc">
+ 
+             <li id="definition-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium hic adipisci voluptatum repellendus eaque et dicta! Consequuntur similique unde corrupti.</li>
+             <li id="definition-2">Minima vero enim molestiae sed nisi, aliquam modi magni iste beatae voluptate nulla hic unde doloremque saepe eaque repellendus dolores?</li>
+ 
+ 
+ 
+ 
+            </ul>
+ 
+ 
+ 
+ 
+ 
+ 
+         </section>
+
+        <div class="flex space-x-10">
+
+            <p>Synonyms</p>
+            <p id="Synonyms" class="text-purple-400">electronic  keyboard</p>
+
+
+
+        </div>
+
+
+        <section class="py-5 space-y-5">
+
+            <p class="font-bold">Verb</p>
+ 
+            <p>Meaning</p>
+
+           <ul class="space-y-5 list-disc">
+
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium hic adipisci voluptatum repellendus eaque et dicta! Consequuntur similique unde corrupti.</li>
+            <li>Minima vero enim molestiae sed nisi, aliquam modi magni iste beatae voluptate nulla hic unde doloremque saepe eaque repellendus dolores?</li>
+
+
+
+
+           </ul>
+
+
+
+
+
+        </section>
+
+
+
+       </section>
+    </main>
+
+
+
+
+<script src="js/dictionary.js"></script>
+    
+</body>
+</html>
