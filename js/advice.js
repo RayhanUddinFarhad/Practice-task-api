@@ -1,27 +1,26 @@
-const getAdvice = () => {
+const getAdvice = (query) => {
 
 
 
-    const url = 'https://api.adviceslip.com/advice'
+    const url = `https://api.adviceslip.com/advice/search/${query}`
     fetch(url)
     .then (response => response.json())
-    .then (data => showAdvice(data.slip))
+    .then (data => showAdvice(data))
     
 }
 
 
 const showAdvice = (advice) => { 
-    console.log ()
 
 
 
     const id = document.getElementById ('id')
-    id.innerText = advice.id;
+    id.innerText = advice.slips[0].id;
 
     const adviceText = document.getElementById ('advice')
 
     adviceText.innerText = ` 
-    "${advice.advice}"
+    "${advice.slips[0].advice}"
     
     `
 
@@ -31,5 +30,20 @@ const showAdvice = (advice) => {
 
 
 }
+
+
+const resultByQuery = () => {
+
+    const value = document.getElementById ('search-advice').value;
+
+    getAdvice (value)
+
+
+
+
+
+
+
+ }
 
 getAdvice ()
